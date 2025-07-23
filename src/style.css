@@ -1,5 +1,81 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: green;
+  margin: 0;
 }
+
+button {
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+#cardContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.card {
+  display: inline-block;
+  width: 80px;
+  height: 120px;
+  margin: 5px;
+  background-color: white;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+.card .card-value {
+  font-size: 20px;
+  display: block;
+}
+
+.card .card-suit {
+  font-size: 24px;
+  display: block;
+  margin-top: 10px;
+}
+
+.card-rank.bottom {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+.card.hearts {
+  border-color: red;
+}
+
+.card.diamonds {
+  border-color: red;
+}
+
+.card.clubs {
+  border-color: black;
+}
+
+.card.spades {
+  border-color: black;
+}
+
+#sortSteps {
+  margin-top: 20px;
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.step-card-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.step-card-row .card {
+  margin: 0 5px;
+}
+
